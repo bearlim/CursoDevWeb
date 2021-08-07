@@ -1,0 +1,16 @@
+/*
+
+o seletores tem o seus níveis de prioridade
+
+P {
+    nivel de prioridade = 1
+}
+
+.paragrafo {
+    nível de prioridade = 10 
+}
+
+#idParagrafo {
+    nível de prioridade = 100
+}
+*/
