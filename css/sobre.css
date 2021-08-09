@@ -52,3 +52,35 @@ figcaption {
 #contato {
     background-color: paleturquoise;
 }
+
+.titulo {
+    padding: 10px;
+    font-size: 32px;
+    background-color: #E1EDF2;  
+}
+.contato__subtitulo {
+    display: inline;
+}
+.contato__info { 
+    margin: 16px 0 24px;
+    padding-left: 32px;
+}
+
+/* fazendo com que o dt e o dd fiquem lado a lado*/
+.contato__info-titulo, .contato__info-descricao {
+    display: inline;
+}
+/* definindo uma nova margem para o dd*/
+.contato__info-descricao {
+    margin-left: 10px;
+}
+
+.contato__secao {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 16px;
+}
+
+.contato__secao--telefone {
+    margin-left: 32px;
+}

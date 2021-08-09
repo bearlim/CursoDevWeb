@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -75,12 +75,11 @@
         </div>
 
         <!--Usando novas tags (section, article e address)-->
-        <div>
-            <h2 id="contato">Contato</h2>
-            
-            <h4>Correspondência</h4>
+        <h2 id="contato">Contato</h2>
+        <div class="contato__secao">
+            <h4 class="contato__subtitulo">Correspondência</h4>
             <!--Usando tag address-->
-            <address>
+            <address class="contato__info">
                 AOVS Sistemas de Informática S.A
                 <br>
                 Rua Vergueiro, 3185, 8º andar
@@ -89,18 +88,21 @@
                 <br>
                 São Paulo - SP
             </address>
+        </div>
 
-            <h4>Telefones</h4>
+        
+        <div class="contato__secao contato__secao--telefone">
+            <h4 class="contato__subtitulo">Telefones</h4>
             <!--
                 Usando o href para dar o dump no número de telefone! além 
                 de usar a lista de descrição
             -->
-            <dl>
-                <dt>Pessoa Física:</dt>
-                <dd> <a href="tel://114118-3319">(11) 4118-3319</a></dd>
+            <dl class="contato__info">
+                <dt class="contato__info-titulo">Pessoa Física:</dt>
+                <dd class="contato__info-descricao"> <a href="tel://114118-3319">(11) 4118-3319</a></dd>
                 <br>
-                <dt>Pessoa Jurídica:</dt>
-                <dd> <a href="tel://114118-2172">(11) 4118-2172</a></dd>
+                <dt class="contato__info-titulo">Pessoa Jurídica:</dt>
+                <dd class="contato__info-descricao"> <a href="tel://114118-2172">(11) 4118-2172</a></dd>
             </dl>
         </div>
     </body>
