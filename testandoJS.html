@@ -1,24 +1,44 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script>
             $(document).ready(function(){
-                $("#hide").click(function(){
+                $(".hide").mouseenter(function(){ // usando uma class para esconder o conteúdo
                     $("p").hide();
                 });
-                $("#show").click(function(){
+                $("#show").mouseenter(function(){ // usando um id para mostrar o conteúdo
                     $("p").show();
                 });
+
+                $("p").click(function(){
+                     $(this).hide();
+                });
             });
+
+            /*
+            alguns eventos em JQuery
+
+            - click
+            - dbclick
+            - mouseenter
+            - mouseleave
+            - keypress
+            - keydown
+            - keyup
+            */
         </script>
     </head>
     <body>
+        <p>Mostrando alguma mensagem besta! kk</p>
 
-        <p>Alguma mensagem qualquer!</p>
+        <button class="hide">Esconder</button>
+        <button id="show">Mostrar</button>
 
-        <button id="hide">Hide</button>
-        <button id="show">Show</button>
-
+        <p>Aqui!!!!!!</p>
     </body>
 </html>
