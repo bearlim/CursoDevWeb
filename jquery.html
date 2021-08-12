@@ -7,6 +7,9 @@
         <title>Document</title>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script>
+            /*
+            JQuery Effects
+
             $(document).ready(function(){
                 $("#fade").click(function(){
                     $("#div1").fadeIn();
@@ -14,18 +17,43 @@
                     $("#div3").fadeIn("2500");
                 });
                 $("#fadeout").click(function(){
-                    $("div3").fadeOut();
-                    $("div2").fadeOut("slow");
-                    $("div1").fadeOut(2500);
+                    $("#div3").fadeOut();
+                    $("#div2").fadeOut("slow");
+                    $("#div1").fadeOut(2500);
+                });
+
+                $("#fadetoggle").click(function(){
+                    $("#div1").fadeToggle();
+                    $("#div2").fadeToggle();
+                    $("#div3").fadeToggle();
+
+                });
+
+                $("#slide").click(function(){
+                    $("#div1").slideUp();
+                });
+            });
+            */
+
+            $(document).ready(function(){
+                $("#mostrarlink").click(function(){
+                    alert($("#google").attr("href")); // retorna um valor
+                    var x = $("#google").attr("href"); 
+                    console.log(x);
+                });
+
+                // atribuindo valor ao href
+                $("#SetarLink").click(function(){
+                    $("#google2").attr("href", "https://google.com/")
                 });
             });
 
-            /*
-            Efeito degrade
-            */
         </script>
     </head>
     <body>
+
+        <!--
+            JQuery Effects
         <button id="fade">Fade in</button>
 
         <div id="div1" style="width:80px;height:80px;display:none;background-color:red;"></div><br><br>
@@ -33,5 +61,15 @@
         <div id="div3" style="width:80px;height:80px;display:none;background-color:yellowgreen;"></div><br><br>
         
         <button id="fadeout">Fade out</button>
+        <button id="fadetoggle">Fade toggle</button>
+        <button id="slide">Slide</button>
+        -->
+
+        <p><a href="https://google.com" id="google">google.com</a></p>
+        <button id="mostrarlink">Clique para ver o link</button>
+
+        <p><a id="google2">google2</a></p>
+        <button id="SetarLink">Clique aqui para setar o link</button>
+
     </body>
 </html>
