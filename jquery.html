@@ -6,49 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script>
-            /*
-            JQuery Effects
-
-            $(document).ready(function(){
-                $("#fade").click(function(){
-                    $("#div1").fadeIn();
-                    $("#div2").fadeIn("slow");
-                    $("#div3").fadeIn("2500");
-                });
-                $("#fadeout").click(function(){
-                    $("#div3").fadeOut();
-                    $("#div2").fadeOut("slow");
-                    $("#div1").fadeOut(2500);
-                });
-
-                $("#fadetoggle").click(function(){
-                    $("#div1").fadeToggle();
-                    $("#div2").fadeToggle();
-                    $("#div3").fadeToggle();
-
-                });
-
-                $("#slide").click(function(){
-                    $("#div1").slideUp();
-                });
-            });
-            */
-
-            $(document).ready(function(){
-                $("#mostrarlink").click(function(){
-                    alert($("#google").attr("href")); // retorna um valor
-                    var x = $("#google").attr("href"); 
-                    console.log(x);
-                });
-
-                // atribuindo valor ao href
-                $("#SetarLink").click(function(){
-                    $("#google2").attr("href", "https://google.com/")
-                });
-            });
-
-        </script>
+        <script src="./js/jquery.js"></script>
     </head>
     <body>
 
@@ -64,12 +22,32 @@
         <button id="fadetoggle">Fade toggle</button>
         <button id="slide">Slide</button>
         -->
+        <!--
+            Setando e pegando atributos
 
         <p><a href="https://google.com" id="google">google.com</a></p>
         <button id="mostrarlink">Clique para ver o link</button>
 
         <p><a id="google2">google2</a></p>
         <button id="SetarLink">Clique aqui para setar o link</button>
+        <button id="RetirarLink">Clique aqui para retirar</button>
 
+
+        <br><br><br><br>
+        <p id="FeitoParaSerRemovido">Vou ser removido ao apertar nesse botão</p>
+        <p id="Feito2">Pra ser removido tbm</p>
+        <button id="remov">Remover o carinha ai</button>
+        -->
+
+        <div>
+            <ul>
+                <li id="teste">
+                    opa
+                </li>
+            </ul>
+
+            <br><br><br>
+            <button id="VerElemento">Vendo parente do li opa</button>
+        </div>
     </body>
 </html>
